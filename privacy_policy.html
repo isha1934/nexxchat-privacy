@@ -1,130 +1,252 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Datenschutzerklärung – Nexxchat</title>
-<style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 40px; line-height: 1.6; color:#222; }
-    h1, h2 { color: #111; }
-    hr { margin: 30px 0; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – Nexxchat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f7f7f7;
+    }
+    h1, h2, h3 {
+      color: #111;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+    h3 {
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+    }
+    hr {
+      margin: 24px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+    .meta {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    strong {
+      font-weight: 600;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Datenschutzerklärung – Nexxchat</h1>
-<p><strong>Letzte Aktualisierung:</strong> 2025</p>
+  <h1>Datenschutzerklärung – Nexxchat</h1>
+  <p class="meta"><strong>Stand:</strong> 03. Dezember 2025</p>
 
-<hr>
+  <hr />
 
-<h2>1. Verantwortliche Stelle</h2>
-<p>
-Nexxchat<br>
-Entwickler: <strong>Iskander Haddar</strong><br>
-E-Mail: <strong>iskandar.haddar@gmail.com</strong>
-</p>
+  <div class="box">
+    <h2>1. Verantwortliche Stelle</h2>
+    <p>
+      Wir, das Studenten-Team von Nexxchat, sind für den Schutz Ihrer Daten verantwortlich.
+    </p>
+    <p>
+      <strong>Verantwortlich:</strong> Iskander Haddar / Team Nexxchat<br />
+      <strong>Adresse:</strong> Berliner Allee 123, 13088 Berlin, Deutschland<br />
+      <strong>E-Mail:</strong> <a href="mailto:iskandar.haddar@gmail.com">iskandar.haddar@gmail.com</a>
+    </p>
+  </div>
 
-<hr>
+  <div class="box">
+    <h2>2. Welche Daten verarbeiten wir und warum?</h2>
+    <p>
+      Wir verarbeiten nur die Daten, die notwendig sind, um die Funktionen der App bereitzustellen
+      (Vertragserfüllung) und die Sicherheit der App zu gewährleisten (berechtigtes Interesse).
+    </p>
 
-<h2>2. Welche Daten werden erfasst?</h2>
+    <h3>2.1 Konto- und Login-Daten</h3>
+    <ul>
+      <li>E-Mail-Adresse</li>
+      <li>Verschlüsseltes Passwort (über Firebase Authentication)</li>
+      <li>Nutzer-ID (UID)</li>
+    </ul>
+    <p><strong>Zweck:</strong> Anmeldung, Identifikation, Kontoverwaltung.</p>
 
-<h3>2.1 Konto- und Login-Daten</h3>
-<ul>
-    <li>E-Mail-Adresse</li>
-    <li>Passwort (verschlüsselt durch Firebase Authentication)</li>
-    <li>Nutzer-ID (UID)</li>
-</ul>
+    <h3>2.2 Chat- und Inhaltsdaten</h3>
+    <ul>
+      <li>Chat-Nachrichten (Text)</li>
+      <li>Bilder und Dateien (Firebase Storage)</li>
+      <li>Gruppeninformationen</li>
+      <li>KI-Prompts (z. B. für Bildgenerierung)</li>
+      <li>Tetris- / Mini-Game-Daten</li>
+      <li>Video-Call-Metadaten (z. B. Beginn, Ende, Dauer)</li>
+    </ul>
+    <p>
+      <strong>Wichtig:</strong> Es werden <strong>keine Audio- oder Video-Inhalte</strong> der Anrufe gespeichert,
+      sondern nur Metadaten zur Bereitstellung und Qualitätssicherung der Dienste.
+    </p>
 
-<h3>2.2 Chat- und Kommunikationsdaten</h3>
-<ul>
-    <li>Nachrichten (Text)</li>
-    <li>Bilder & Dateien (Firebase Storage)</li>
-    <li>Gruppeninformationen</li>
-    <li>Reaktionen, Timestamps, Verläufe</li>
-    <li>KI-generierte Bilder</li>
-    <li>Tetris-Scores / Mini-App-Daten</li>
-    <li>Video-Call Metadaten (Start, Ende, Dauer)</li>
-</ul>
-<p><strong>Wichtig:</strong> Keine Video- oder Audioinhalte werden gespeichert.</p>
+    <h3>2.3 Geräte- und Nutzungsdaten</h3>
+    <ul>
+      <li>Firebase Installation ID</li>
+      <li>App-Version und Betriebssystem</li>
+      <li>Crash-Reports (Crashlytics, falls aktiviert)</li>
+      <li>Basis-Analytics (Firebase Analytics, falls aktiviert)</li>
+    </ul>
+    <p><strong>Zweck:</strong> Stabilität, Fehlersuche, Verbesserung der App.</p>
+  </div>
 
-<h3>2.3 Geräte- & Nutzungsdaten</h3>
-<ul>
-    <li>Firebase Installation ID</li>
-    <li>App-Version, Betriebssystem</li>
-    <li>Crash-Berichte (Crashlytics)</li>
-    <li>Analytics-Daten (optional)</li>
-</ul>
+  <div class="box">
+    <h2>3. Weitergabe an externe Dienstleister</h2>
+    <p>
+      Wir setzen sorgfältig ausgewählte Dienstleister ein, um Nexxchat bereitzustellen.
+      Diese Dienstleister verarbeiten Ihre Daten nur im Rahmen unserer Weisungen.
+    </p>
 
-<hr>
+    <h3>3.1 Firebase (Google LLC)</h3>
+    <ul>
+      <li>Bereitstellung von Authentifizierung (Login), Datenbank (Chats), Cloud Storage (Bilder/Dateien)</li>
+      <li>Speicherung von Nutzerdaten auf Firebase-Servern (teilweise in den USA)</li>
+      <li>Rechtsgrundlage: Vertragserfüllung, berechtigtes Interesse</li>
+    </ul>
+    <p>
+      Weitere Informationen: 
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+        https://firebase.google.com/support/privacy
+      </a>
+    </p>
 
-<h2>3. Wofür werden die Daten verwendet?</h2>
-<ul>
-    <li>Nutzerkonten-Verwaltung</li>
-    <li>Chats, Gruppen, Medien</li>
-    <li>Videoanrufe (ZegoCloud)</li>
-    <li>Funktionsverbesserung</li>
-    <li>Fehleranalyse</li>
-    <li>Synchronisation zwischen Geräten</li>
-</ul>
+    <h3>3.2 Pollination.ai</h3>
+    <p>
+      Für KI-generierte Bilder können Prompts an Pollination.ai übermittelt werden.
+      Nach Angaben des Dienstleisters werden diese Eingaben nicht dauerhaft gespeichert.
+    </p>
+    <p>
+      Weitere Informationen:
+      <a href="https://pollination.ai/terms" target="_blank" rel="noopener">
+        https://pollination.ai/terms
+      </a>
+    </p>
 
-<hr>
+    <h3>3.3 Gemini (Google)</h3>
+    <p>
+      Unser Support-Bot kann Anfragen über die Gemini-API verarbeiten. Diese Anfragen werden nicht zum
+      Training von Modellen verwendet. Zur Missbrauchserkennung kann eine kurzfristige Speicherung
+      (ca. 30 Tage) erfolgen.
+    </p>
+    <p>
+      Weitere Informationen:
+      <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">
+        https://ai.google.dev/gemini-api/terms
+      </a>
+    </p>
 
-<h2>4. Weitergabe der Daten an Dritte</h2>
+    <h3>3.4 ZegoCloud</h3>
+    <p>
+      Für Video- und Sprachanrufe setzen wir ZegoCloud (Peer-to-Peer) ein.
+      Es werden Verbindungsdaten (Metadaten) verarbeitet, jedoch keine Inhalte der Anrufe gespeichert.
+    </p>
+    <p>
+      Weitere Informationen:
+      <a href="https://www.zegocloud.com/privacy" target="_blank" rel="noopener">
+        https://www.zegocloud.com/privacy
+      </a>
+    </p>
+  </div>
 
-<h3>Firebase (Google LLC)</h3>
-<ul>
-    <li>Authentication</li>
-    <li>Firestore Database</li>
-    <li>Cloud Storage</li>
-    <li>Crashlytics / Analytics</li>
-</ul>
-<p>Firebase Datenschutz:  
-<a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+  <div class="box">
+    <h2>4. Speicherdauer</h2>
+    <ul>
+      <li>
+        Kontodaten, Chats und Inhalte werden gespeichert, solange das Konto besteht.
+        Bei Kontolöschung werden diese Daten dauerhaft gelöscht.
+      </li>
+      <li>
+        Protokolldaten des Gemini-Bots können aus Sicherheitsgründen für etwa
+        <strong>30 Tage</strong> gespeichert werden.
+      </li>
+    </ul>
+    <p>
+      Beim Löschen Ihres Kontos werden insbesondere folgende Daten entfernt:
+    </p>
+    <ul>
+      <li>Profildaten und Kontoinformationen</li>
+      <li>Chatverläufe</li>
+      <li>Bilder und Dateien im Firebase Storage</li>
+      <li>Gruppenzugehörigkeiten und Metadaten</li>
+      <li>Call-Logs (Metadaten)</li>
+    </ul>
+  </div>
 
-<h3>ZegoCloud</h3>
-<p>
-Für Videoanrufe wird ZegoCloud verwendet (Peer-to-Peer).  
-Keine Video- oder Audioinhalte werden gespeichert.
-</p>
-<p>Datenschutz:  
-<a href="https://www.zegocloud.com/privacy" target="_blank">https://www.zegocloud.com/privacy</a></p>
+  <div class="box">
+    <h2>5. Ihre Rechte nach DSGVO</h2>
+    <p>Sie haben im Rahmen der geltenden Datenschutzgesetze insbesondere das Recht auf:</p>
+    <ul>
+      <li><strong>Auskunft</strong> über die zu Ihrer Person gespeicherten Daten,</li>
+      <li><strong>Berichtigung</strong> unrichtiger Daten,</li>
+      <li><strong>Löschung</strong> Ihrer Daten (Recht auf Vergessenwerden),</li>
+      <li><strong>Einschränkung</strong> der Verarbeitung,</li>
+      <li><strong>Datenübertragbarkeit</strong>,</li>
+      <li><strong>Widerspruch</strong> gegen bestimmte Verarbeitungen,</li>
+      <li>
+        <strong>Beschwerde</strong> bei einer zuständigen Datenschutzbehörde, z. B. in Ihrem Bundesland
+        oder an Ihrem Wohnort.
+      </li>
+    </ul>
+    <p>
+      Zur Ausübung Ihrer Rechte genügt eine formlose E-Mail an
+      <a href="mailto:iskandar.haddar@gmail.com">iskandar.haddar@gmail.com</a>.
+    </p>
+  </div>
 
-<hr>
+  <div class="box">
+    <h2>6. Sicherheit</h2>
+    <p>
+      Sämtliche Datenübertragungen erfolgen verschlüsselt (HTTPS).
+      Darüber hinaus verwenden wir Firebase Security Rules und weitere technische und organisatorische Maßnahmen,
+      um Ihre Daten vor unberechtigtem Zugriff zu schützen.
+    </p>
+  </div>
 
-<h2>5. Speicherung der Daten</h2>
-<p>
-Alle Daten werden auf Firebase-Servern gespeichert (EU-Region, sofern konfiguriert).<br>
-Bilder & Dateien liegen in Firebase Cloud Storage.
-</p>
-
-<hr>
-
-<h2>6. Rechte gemäß DSGVO</h2>
-<ul>
-    <li>Auskunft</li>
-    <li>Löschung des Kontos + aller Daten</li>
-    <li>Datenübertragbarkeit</li>
-    <li>Widerspruch</li>
-    <li>Beschwerderecht</li>
-</ul>
-
-<hr>
-
-<h2>7. Datenlöschung</h2>
-<p>
-Beim Löschen des Kontos werden alle personenbezogenen Daten, Chats, Bilder,
-Gruppendaten und Call-Logs vollständig aus Firebase gelöscht.
-</p>
-
-<hr>
-
-<h2>8. Sicherheit</h2>
-<p>
-Alle Verbindungen sind verschlüsselt (HTTPS).  
-Firebase Security Rules schützen die gespeicherten Daten.
-</p>
-
-
+  <div class="box">
+    <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+    <p>
+      Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen
+      (z. B. bei neuen Funktionen oder geänderten rechtlichen Vorgaben).
+    </p>
+    <p>
+      Die jeweils aktuelle Version ist jederzeit unter folgender URL abrufbar:
+    </p>
+    <p>
+      <strong>
+        <a href="https://isha1934.github.io/nexxchat-privacy/privacy_policy.html">
+          https://isha1934.github.io/nexxchat-privacy/privacy_policy.html
+        </a>
+      </strong>
+    </p>
+  </div>
 
 </body>
 </html>
